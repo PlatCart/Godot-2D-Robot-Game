@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt1snmxrk2jkf"]
+
+[ext_resource type="PackedScene" uid="uid://diaip2uqqt6uv" path="res://player.tscn" id="1_dhalm"]
+[ext_resource type="PackedScene" uid="uid://b26y6hcs8dymj" path="res://tile_map_layer.tscn" id="2_bxfy6"]
+
+[node name="MainNode" type="Node2D"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("2_bxfy6")]
+position = Vector2(-286, 388)
+
+[node name="Player" parent="." instance=ExtResource("1_dhalm")]
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
